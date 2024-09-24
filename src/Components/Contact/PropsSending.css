@@ -1,0 +1,37 @@
+.container {
+    border-radius: 20px;
+    background-color: #E8E8E8;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+  }
+  
+  .outlet {
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .button {
+    font-size: 18px;
+    background-color: #E8E8E8; /* Match container color */
+    border: 3px solid black; /* Black outline */
+    border-radius: 5px;
+    color: black;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+    height: 40px; /* Set a fixed height */
+    flex: 1; /* Allow buttons to grow equally */
+    display: flex; /* Make buttons flex containers */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
