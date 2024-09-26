@@ -1,14 +1,8 @@
-body{
-
-}
 
 h1 {
   text-align: center;
   color: #333;
 }
-
-
-
 input[type='text'] {
   width: 100%;
   padding: 10px;
@@ -17,9 +11,6 @@ input[type='text'] {
   border-radius: 4px;
   font-size: 16px;
 }
-
-
-
 h3 {
   color: #333;
   font-size: 20px;
@@ -32,7 +23,6 @@ h1 {
 p{
   font-size: 18px;
 }
-
 main {
   width:90%;
   max-width: 550rem;
@@ -46,11 +36,9 @@ main h2 {
   font-size: 28px;
   font-weight: bold;
 }
-
 .mainname h1{
   font-size: 70px;
 }
-
 #core-concepts ul {
   list-style: none;
   padding: 0;

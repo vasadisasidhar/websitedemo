@@ -2,11 +2,8 @@ import React, { useState } from 'react';
 import './Contactpage.css';
 import { CONTACT_DETAILS } from './Data';
 import { PropsSending } from './PropsSending';
-
-
-
 const ContactPage = () => {
-  const [formData, setFormData] = useState({name: '',email: '',num: '',msg: ''});
+  {/*const [formData, setFormData] = useState({name: '',email: '',num: '',msg: ''});
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -26,7 +23,7 @@ const ContactPage = () => {
     const message = `Name: ${name}\nEmail: ${email}\nPhone: ${num}\nMessage: ${msg}`;
     alert(message);
     setFormData({ name: '', email: '', num: '', msg: '' });
-  };
+  };*/}
 
   return (
     <div>
@@ -86,9 +83,7 @@ const ContactPage = () => {
         <h3>Email: vs@gmail.com</h3>
         <h3>Fax: 08922-224945</h3>
       </div>
-    </div>*/}
-
-        
+    </div>*/}      
 </mainSection>
 
     </div>

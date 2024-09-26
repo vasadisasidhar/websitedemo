@@ -1,0 +1,37 @@
+.sideNavBar {
+    background-color:rgb(3, 3, 110);
+    color: white;
+    width: 350px;
+    height: 600px;
+    margin: 0 150px; /* Add white space on both sides */
+    border-radius: 15px;
+    border: 1px solid #E8E8E8;
+  }
+  
+  .sideNavBar ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flex for horizontal alignment */
+    align-items: center; /* Center items vertically */
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px; /* Add space below the text */
+    margin-bottom: 25px;   /* Add margin below each ul */
+    
+  }
+  .sideNavBar img{
+    padding-left: 50px;
+    align-items: center;
+    width:100px;
+    padding-top: 40px;
+  }
+  
+  .sideNavBar li {
+    margin: 0 10px; /* Add space between items */
+    display: flex; /* Use flex for image and text alignment */
+    flex-direction: column; /* Stack image above text */
+    align-items: center; /* Center items horizontally */
+    font-size: 25px;
+    padding-top: 25px;
+    padding-left: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }

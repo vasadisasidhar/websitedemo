@@ -1,18 +1,16 @@
 import React from 'react'
 import './Home.css';
 import Slideshow from './Slideshow'
-
-
+import Sidenavbar from './Subcomponents/Sidenavbar/Sidenavbar';
+import Centerimage from './Subcomponents/Centerimage/Centerimage';
 const Home = () => {
   return (
     <div>
       <Slideshow/>
       <div className="carrange">
         <h1>CAR RANGE</h1>
-      </div>
-
-      <div className="sideNavBar">
-        
+        <Sidenavbar/>
+        <Centerimage/>
       </div>
     </div>
   )

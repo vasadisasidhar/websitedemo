@@ -1,8 +1,11 @@
 .slideShowContainer{
     padding-top: 72px;
+    position: relative;
+    z-index: 1;
     /*height: 2200px;
     width: 2200px;
     padding-left: 200px;*/
 }
+
 
 

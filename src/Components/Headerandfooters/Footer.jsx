@@ -51,28 +51,6 @@ const Footer = () => {
             <img src={facebook}/>
             </div>
         </div>
-        {/*<div className="left">
-          <h1>Cars...</h1>
-          <li>Alto K10</li>
-          <li>Celerio</li>
-          <li>Dzire</li>
-          <li>Brezza</li>
-          <li>S-Presso</li>
-          </div>
-          
-          <div className="left1">
-            <br></br>
-            <br></br>
-            <br></br>
-          <li>WagonR</li>
-          <li>Swift</li>
-          <li>Ertiga</li>
-          <li>Eeco</li>
-          </div>
-
-          <div className="timeslot">
-            <h1>Business Hours</h1>
-          </div>*/} 
       </div>
       <div className="footerbox">
         <h2>Copyright © Maruti Suzuki India Limited</h2>

@@ -3,11 +3,11 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 37px 200px;
     position: fixed;
+    z-index: 2;
     top:0;
     right: 0;
     left: 0;
-    padding-top: 125px;
-    
+    padding-top: 125px; 
 }
 .mainNavBar ul {
     list-style-type: none;
@@ -22,6 +22,7 @@
     font-weight: bold; 
     color: black;
     cursor: pointer;
+    margin: 0 15px;
 }
 
 .mainNavBar li:hover {
@@ -34,5 +35,12 @@
 }
 .mainNavBar a:hover {
     text-shadow: 0 0 10px rgba(0, 0, 0, 1.0);;
+}
+
+.mainNavBar img{
+    height: 30px;
+    margin-right: 10px;
+    transform: translateY(-3px);
+    
 }
 
