@@ -1,28 +1,8 @@
 import React, { useState } from 'react';
 import './Centerslideshow.css';
 import Carousel from 'react-bootstrap/Carousel';
+import {IMAGES} from './Carsdata';
 
-import brezza from '../Images/brezza.png';
-import alto from '../Images/altoK10.png';
-import celerio from '../Images/celerio.png';
-import dzire from '../Images/dzire.png';
-import eeco from '../Images/Eeco.png';
-import ertiga from '../Images/ertiga.png';
-import strong from '../Images/Strong black and red.png';
-import swift from '../Images/swift.png';
-import swift2 from '../Images/swift02.png';
-
-const images = [
-    { src: brezza, alt: "Brezza" },
-    { src: alto, alt: "Alto K10" },
-    { src: celerio, alt: "Celerio" },
-    { src: dzire, alt: "Dzire" },
-    { src: eeco, alt: "Eeco" },
-    { src: ertiga, alt: "Ertiga" },
-    { src: strong, alt: "Strong" },
-    { src: swift, alt: "Swift" },
-    { src: swift2, alt: "Swift 2" },
-];
 
 const Centerslideshow = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,13 +14,32 @@ const Centerslideshow = () => {
     return (
         <div className='slidecontainer'>
             <Carousel activeIndex={currentIndex} onSelect={handleSelect}>
-                {images.map((image, index) => (
+                {IMAGES.map((image, index) => (
                     <Carousel.Item key={index}>
                         <img className="d-block w-100" src={image.src} alt={image.alt} />
                     </Carousel.Item>
                 ))}
             </Carousel>
-            <h2 className="car-name">{images[currentIndex].alt}</h2>
+            <div className="carsDetails">
+
+                <div className="details">
+                <h2 className="car-name">{IMAGES[currentIndex].alt}</h2>
+                <h3 className="car-name">{IMAGES[currentIndex].showroom}</h3>
+                <h1 className="car-name">{IMAGES[currentIndex].price}</h1>
+                </div>
+                
+
+                <div className='millagedetails'>
+                <h2 className="car-name">{IMAGES[currentIndex].Millage}</h2>
+                <h2 className="car-name">{IMAGES[currentIndex].Millage2}</h2>
+                <h2 className="car-name">{IMAGES[currentIndex].Millage3}</h2>
+                <h2 className="car-name">{IMAGES[currentIndex].Millage4}</h2>
+                <h2 className="car-name">{IMAGES[currentIndex].Millage5}</h2>
+                </div>
+                
+            </div>
+            
+
         </div>
     );
 }

@@ -8,12 +8,12 @@ import ContactPage from './Contact/Contact'
 import Mainnavagationbar from './Navagation/Mainnavagationbar'
 import Footer from './Headerandfooters/Footer'
 
-
 const Mainhomepage = () => {
   return (
     <div>
       <Navagationbar/>
       <Mainnavagationbar/>
+      <Home/>
       <Routes>
       <Route path='/home' element = {<Home/>}/>
         <Route path='/cars' element = {<Cars/>}/>
@@ -21,9 +21,6 @@ const Mainhomepage = () => {
         <Route path='/contact' element = {<ContactPage/>}/> 
       </Routes>
       <Footer/>
-      
-      
-     
     </div>
   )
 }
