@@ -7,8 +7,7 @@ import Buttons from './Components/Home/Subcomponents/Tabbuttons/Buttons'
 const App = () => {
   return (
     <div>
-      <Mainhomepage/>
-      
+      <Mainhomepage/> 
     </div>
   )
 }
