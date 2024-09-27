@@ -1,0 +1,35 @@
+/* Centerslideshow.css */
+
+.check {
+    /* Example styles for the container */
+    max-width: 1000px;  /* Adjust as needed */
+    max-height: 2000px;
+}
+
+.image-gallery-slide img {
+    border: 2px solid #ddd;  /* Example for original images */
+    border-radius: 10px;     /* Rounded corners */
+}
+
+.image-gallery-thumbnail img {
+    border: 2px solid #ccc;  /* Example for thumbnails */
+    border-radius: 5px;      /* Rounded corners */
+}
+
+.image-gallery-thumbnail-wrapper {
+    padding: 5px;            /* Spacing around thumbnails */
+}
+
+
+.slidecontainer{
+    height: 100px;
+    width: 900px;
+    padding-bottom: 0px;
+}
+
+.slidecontainer h2{
+    font-size: 60px;
+    text-align: center;
+    
+
+}
