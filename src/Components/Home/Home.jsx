@@ -9,10 +9,9 @@ const Home = () => {
       <Slideshow/>
       <div className="carrange">
         <h1>CAR RANGE</h1>
+        </div>
         <Sidenavbar/>
         <Buttons/>
-      
-      </div>
     </div>
   )
 }

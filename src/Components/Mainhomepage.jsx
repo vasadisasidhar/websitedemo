@@ -13,7 +13,6 @@ const Mainhomepage = () => {
     <div>
       <Navagationbar/>
       <Mainnavagationbar/>
-      <Home/>
       <Routes>
       <Route path='/home' element = {<Home/>}/>
         <Route path='/cars' element = {<Cars/>}/>

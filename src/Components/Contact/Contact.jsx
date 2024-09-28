@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Contactpage.css';
 import { CONTACT_DETAILS } from './Data';
 import { PropsSending } from './PropsSending';
+
 const ContactPage = () => {
   {/*const [formData, setFormData] = useState({name: '',email: '',num: '',msg: ''});
 
