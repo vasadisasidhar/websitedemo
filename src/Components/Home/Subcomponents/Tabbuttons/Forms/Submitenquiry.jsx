@@ -11,6 +11,7 @@ const Submitenquiry = () => {
   const [error, setError] = useState('');
   const [showModal, setShowModal] = useState(false);
   const [modalMessage, setModalMessage] = useState('');
+  const [isFocused, setIsFocused] = useState({}); // To track focus state of inputs
 
   const handleChange = (setter) => (event) => {
     setter(event.target.value);
@@ -26,7 +27,7 @@ const Submitenquiry = () => {
     setError(''); // Reset error state
 
     if (!name || !number || !model || !type) {
-      setError('All fields are required.');
+      setError('All fields are required...');
       return;
     }
 
@@ -35,7 +36,6 @@ const Submitenquiry = () => {
       return;
     }
 
-    const message = `Name: ${name}\nEmail-id: ${mail}\nPhone: ${number}\nModel: ${model}\nPurchase Type: ${type}`;
     setModalMessage(`Thank You ${name}, we will contact you shortly on +91-${number}`);
     setShowModal(true);
     resetFields();
@@ -48,6 +48,15 @@ const Submitenquiry = () => {
     setModel('');
     setType('');
     setError('');
+    setIsFocused({}); // Reset focused state
+  };
+
+  const handleFocus = (inputName) => {
+    setIsFocused((prev) => ({ ...prev, [inputName]: true }));
+  };
+
+  const handleBlur = (inputName) => {
+    setIsFocused((prev) => ({ ...prev, [inputName]: false }));
   };
 
   const handleCloseModal = () => {
@@ -57,27 +66,57 @@ const Submitenquiry = () => {
   return (
     <div className="container1">
       <div className="registration">CAR ENQUIRY</div>
-      {error && <div className="error">{error}</div>}
+      <h3>{error && <div className="error">{error}</div>}</h3>
       <form onSubmit={submitHandler}>
         <div className="container2">
           <div className="inputbox">
             <span className="inputtext">Name:</span>
-            <input type='text' placeholder='Enter Your Name...' value={name} onChange={handleChange(setName)} />
+            <input
+              type='text'
+              placeholder='Enter Your Name *'
+              value={name}
+              onChange={handleChange(setName)}
+              onFocus={() => handleFocus('name')}
+              onBlur={() => handleBlur('name')}
+              className={isFocused.name || name ? 'focused' : ''}
+            />
           </div>
 
           <div className="inputbox">
             <span className="inputtext">Number:</span>
-            <input type='text' placeholder='Enter Number...' value={number} onChange={handleChange(setNumber)} />
+            <input
+              type='text'
+              placeholder='Enter Number *'
+              value={number}
+              onChange={handleChange(setNumber)}
+              onFocus={() => handleFocus('number')}
+              onBlur={() => handleBlur('number')}
+              className={isFocused.number || number ? 'focused' : ''}
+            />
           </div>
 
           <div className="inputbox">
             <span className="inputtext">Email-id:</span>
-            <input type='text' placeholder='Enter Email-id...' value={mail} onChange={handleChange(setMail)} />
+            <input
+              type='text'
+              placeholder='Enter Email-id...'
+              value={mail}
+              onChange={handleChange(setMail)}
+              onFocus={() => handleFocus('mail')}
+              onBlur={() => handleBlur('mail')}
+              className={isFocused.mail || mail ? 'focused' : ''}
+            />
           </div>
 
           <div className="inputbox">
             <span className="inputtext">Model:</span>
-            <select value={model} onChange={handleChange(setModel)}>
+            <select
+              value={model}
+              onChange={handleChange(setModel)}
+              onFocus={() => handleFocus('model')}
+              onBlur={() => handleBlur('model')}
+              className={isFocused.model || model ? 'focused' : ''}
+            >
               <option value=''>Select Model...</option>
               <option value='Alto K10'>Alto K10</option>
               <option value='WagonR'>WagonR</option>
@@ -93,7 +132,13 @@ const Submitenquiry = () => {
 
           <div className="inputbox1">
             <span className="inputtext">Looking to Exchange Your Car?</span>
-            <select value={type} onChange={handleChange(setType)}>
+            <select
+              value={type}
+              onChange={handleChange(setType)}
+              onFocus={() => handleFocus('type')}
+              onBlur={() => handleBlur('type')}
+              className={isFocused.type || type ? 'focused' : ''}
+            >
               <option value=''>Select...</option>
               <option value='Yes'>YES</option>
               <option value='No'>NO</option>
@@ -106,7 +151,7 @@ const Submitenquiry = () => {
           </div>
         </div>
       </form>
-      {showModal && <Modal message={modalMessage} onClose={handleCloseModal} />}
+      {showModal && <Modal message={modalMessage} onClose={handleCloseModal}/>}
     </div>
   );
 };

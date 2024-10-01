@@ -15,6 +15,7 @@ const Mainhomepage = () => {
       <Mainnavagationbar/>
       <Routes>
       <Route path='/home' element = {<Home/>}/>
+      <Route path='/' element = {<Home/>}/>
         <Route path='/cars' element = {<Cars/>}/>
         <Route path='/bikes' element = {<Bikes/>}/>
         <Route path='/contact' element = {<ContactPage/>}/> 

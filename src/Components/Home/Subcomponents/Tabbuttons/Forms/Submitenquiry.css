@@ -1,3 +1,9 @@
+.container1 h3{
+    color: red;
+    font-size: 30px;
+    
+}
+
 .container1 {
     max-width: 4000px; /* Adjusted max-width to a reasonable value */
     margin: auto;
@@ -45,8 +51,9 @@
   }
 
   .buttonStyle .btn{
-    padding: 20px 40px;
+    padding: 25px 60px;
     margin-top: 20px;
+    font-size: 25px;
   }
 
   input, select {
@@ -90,6 +97,20 @@
     color: black; /* Optional: Change placeholder color */
     opacity: 1; /* Ensure full opacity */
 }
+
+
+
+.inputbox input,
+.inputbox1 select {
+  font-size: 25pxpx; /* Default font size */
+  transition: font-size 0.3s; /* Smooth transition */
+}
+
+.inputbox input.focused,
+.inputbox1 select.focused {
+  font-size: 25px; /* Larger font size when focused */
+}
+
 
 
 

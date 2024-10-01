@@ -1,3 +1,125 @@
-.Heading h1{
-    color: black;
+.container1 h3{
+    color: red;
+    font-size: 30px;
+    
 }
+
+.container1 {
+    max-width: 4000px; /* Adjusted max-width to a reasonable value */
+    margin: auto;
+    padding: 20px;
+    /*border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
+    background-color: #E8E8E8;
+  }
+  
+  .registration {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline; 
+  }
+  
+  .container2 {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line */
+  }
+  
+  .inputbox {
+    flex: 1 1 45%; /* Makes each input box take up about 45% of the row */
+    margin-bottom: 15px;
+    min-width: 250px; /* Ensures a minimum width for smaller screens */
+    margin: 30px;
+  }
+  
+  .inputtext {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 27px;
+  }
+  
+  
+  .buttonStyle1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px;
+    padding-left: 900px;
+  }
+
+  .buttonStyle1 .btn{
+    padding: 25px 60px;
+    margin-top: 20px;
+    font-size: 25px;
+   
+  }
+
+  input, select {
+    width: 100%;
+    height: 70px; /* Adjust height of input fields*/
+    padding: 10px; /* Add padding for better spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 25px; /* Increase font size */
+    box-sizing: border-box; /* Ensures padding does not affect total width */
+  }
+  
+  select {
+    appearance: none; /* Remove default styling in some browsers */
+    background-color: #f9f9f9; /* Background color for better visibility */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.293 6.293a1 1 0 0 1 1.414 0L8 8.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"/></svg>'); /* Custom arrow */
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Position the custom arrow */
+    background-size: 16px; /* Size of the custom arrow */
+  }
+  
+  .inputbox {
+    margin-bottom: 15px;
+    width: 100%; /* Ensure input boxes take full width */
+  }
+
+  .inputbox1 {
+    padding-left: 30px;
+    width: 48%; /* Set width to 48% */
+    padding-top: 30px;
+}
+
+.inputbox input::placeholder {
+    font-size: 25px; /* Set the desired placeholder font size */
+    color: black;
+    opacity: 1;
+}
+
+.inputbox1 select::placeholder {
+    font-size: 25px; /* For select elements, if applicable */
+    color: black; /* Optional: Change placeholder color */
+    opacity: 1; /* Ensure full opacity */
+}
+
+
+
+.inputbox input,
+.inputbox1 select {
+  font-size: 25pxpx; /* Default font size */
+  transition: font-size 0.3s; /* Smooth transition */
+}
+
+.inputbox input.focused,
+.inputbox1 select.focused {
+  font-size: 25px; /* Larger font size when focused */
+}
+
+
+
+
+
+
+
+
+
+  
+  
+  
