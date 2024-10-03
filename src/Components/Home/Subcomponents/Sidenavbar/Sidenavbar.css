@@ -35,8 +35,20 @@
     padding-left: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
-
-
   .mainbody{
     display: flex;
   }
+  
+  .sideNavBar a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits the color from the parent element */
+    
+  }
+  
+  /* Optional: If you want to ensure the text color is a specific color */
+  .sideNavBar a {
+    color: #fff; /* Change this to your desired color */
+  }
+
+  
+  

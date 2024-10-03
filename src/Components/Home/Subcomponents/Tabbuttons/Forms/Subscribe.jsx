@@ -79,6 +79,19 @@ const Subscribe = () => {
               className={isFocused.name || name ? 'focused' : ''}
             />
           </div>
+          
+          <div className="inputbox">
+            <span className="inputtext">Email-id:</span>
+            <input
+              type='text'
+              placeholder='Enter Email-id...'
+              value={mail}
+              onChange={handleChange(setMail)}
+              onFocus={() => handleFocus('mail')}
+              onBlur={() => handleBlur('mail')}
+              className={isFocused.mail || mail ? 'focused' : ''}
+            />
+          </div>
 
           <div className="inputbox">
             <span className="inputtext">Number:</span>
@@ -93,18 +106,7 @@ const Subscribe = () => {
             />
           </div>
 
-          <div className="inputbox">
-            <span className="inputtext">Email-id:</span>
-            <input
-              type='text'
-              placeholder='Enter Email-id...'
-              value={mail}
-              onChange={handleChange(setMail)}
-              onFocus={() => handleFocus('mail')}
-              onBlur={() => handleBlur('mail')}
-              className={isFocused.mail || mail ? 'focused' : ''}
-            />
-          </div>
+          
 
           <div className="inputbox">
             <span className="inputtext">Model:</span>
