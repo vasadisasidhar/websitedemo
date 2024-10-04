@@ -1,0 +1,58 @@
+.containerBox {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: space-between; /* Distribute space evenly */
+    width: 100%; /* Full width of the parent */
+    max-width: 2200px; /* Optional: Limit maximum width */
+    margin: auto; /* Center the container */
+}
+
+.containerBox2{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 2200px;
+    margin: auto;
+}
+
+.containerBox3 h2{
+    color: white;
+    font-size: 25px;
+    padding-left: 50px;
+}
+
+.inputBox {
+    flex: 1; /* Make each input box take equal space */
+    margin-right: 50px; /* Space between input boxes */
+
+}
+
+.inputBox:last-child {
+    margin-right: 0; /* Remove margin from the last input box */
+}
+
+.inputtext {
+    margin-bottom: 5px; /* Space between label and select */
+}
+
+.inputBox input,
+.inputBox select {
+background-color:#373984;
+color: white;
+}
+
+select option {
+    background-color: white; 
+    color: black; 
+}
+
+.inputBox input::placeholder{
+    font-size: 25px;
+    color: white;
+}
+

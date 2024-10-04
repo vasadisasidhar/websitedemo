@@ -85,7 +85,7 @@
   .footerbox {
   height: 70px;
   /*width: 1895px;*/
-  background-color:rgb(3, 3, 110);
+  background-color:#373984;
   padding: 20px; 
   text-align: left;
   }
@@ -105,7 +105,7 @@
   justify-content: space-between; /* Space out items */
   align-items: center; /* Center items vertically */
   padding: 20px; /* Add padding for aesthetics */
-  background-color: rgb(3, 3, 110); /* Change to your desired footer background color */
+  background-color: #373984; /* Change to your desired footer background color */
   }
   
   .footerbox h2, .footerbox h3 {
