@@ -44,6 +44,7 @@
 .inputBox select {
 background-color:#373984;
 color: white;
+cursor: red;
 }
 
 select option {
