@@ -47,7 +47,8 @@ background-color:#373984;
 
 select option {
     background-color: white; 
-    color: black; 
+    color: black;
+    font-size: 10px;
 }
 
 .inputBox input::placeholder{
