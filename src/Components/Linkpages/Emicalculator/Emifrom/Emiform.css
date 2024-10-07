@@ -26,6 +26,14 @@
     padding-left: 50px;
 }
 
+  .containerBox4 p {
+    font-size: 20px; /* Adjust font size */
+    padding-left: 90px;
+    padding-right: 50px;
+    margin-bottom: 40px;
+    margin-top: -30px;
+  }
+  
 .inputBox {
     flex: 1; /* Make each input box take equal space */
     margin-right: 50px; /* Space between input boxes */
@@ -43,16 +51,33 @@
 .inputBox input,
 .inputBox select {
 background-color:#373984;
+color: white;
 }
 
 select option {
     background-color: white; 
-    color: black;
-    font-size: 10px;
+    color: black; 
 }
 
 .inputBox input::placeholder{
     font-size: 25px;
     color: white;
 }
-
+/* Emiform.css */
+  .containerBox4 input{
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    margin-top: 20px; /* Adds space above the button */
+    padding-bottom: 50px;   
+}
+.buttonContainer .btn {
+    font-size: 30px;
+    width: 220px;
+    height: 70px;
+    }
