@@ -9,9 +9,15 @@ const Submitenquiry = () => {
   const [model, setModel] = useState('');
   const [type, setType] = useState('');
   const [error, setError] = useState('');
+
+  
+
   const [showModal, setShowModal] = useState(false);
   const [modalMessage, setModalMessage] = useState('');
+
   const [isFocused, setIsFocused] = useState({}); // To track focus state of inputs
+
+
 
   const handleChange = (setter) => (event) => {
     setter(event.target.value);

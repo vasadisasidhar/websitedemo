@@ -81,3 +81,8 @@ select option {
     width: 220px;
     height: 70px;
     }
+
+    .terms-strong{
+        color: white;
+        border-bottom: 2px solid white;
+    }
