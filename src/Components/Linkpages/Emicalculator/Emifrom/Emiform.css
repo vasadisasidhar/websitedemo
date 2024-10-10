@@ -52,12 +52,14 @@
 .inputBox select {
 background-color:#373984;
 color: white;
+
 }
 
 select option {
     background-color: white; 
     color: black; 
 }
+
 
 .inputBox input::placeholder{
     font-size: 25px;

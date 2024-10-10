@@ -127,7 +127,7 @@ const Emiform = () => {
         <div className="containerBox2">
           <div className="inputBox">
             <span className="inputtext">Name:</span>
-            <input type='text' placeholder='Enter Your Name...' value={name} onChange={(e) => setName(e.target.value)} />
+            <input type='text' placeholder='Enter Your Name...' value={name} onChange={(e) => setName(e.target.value)} style={{ fontSize: name ? '25px' : '16px' }} />
             {errors.name && <span className="error">{errors.name}</span>}
           </div>
 
