@@ -51,6 +51,7 @@ const Footer = () => {
             <img src={facebook}/>
             </div>
         </div>
+        
       </div>
       <div className="footerbox">
         <h2>Copyright © Maruti Suzuki India Limited</h2>

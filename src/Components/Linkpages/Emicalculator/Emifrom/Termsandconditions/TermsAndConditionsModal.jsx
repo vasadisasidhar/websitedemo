@@ -44,11 +44,18 @@ const TermsAndConditionsModal = ({ onClose }) => {
   return (
     <div className="modalOverlay">
       <div className="modalContent">
-        <h2>Terms and Use</h2>
 
+        <div className="headeres">
+          <div className="containerBoxes1">
+            <h5>Terms and Use</h5>
+          </div>
 
+          <div className="containerBoxes2">
+              <button onClick={onClose}>X</button>
+          </div>
+        </div>
+  
         <div className="body1">
-          <h3>Terms and Conditions</h3>
             <p>
               Please read these terms and conditions carefully. By accessing this site and any pages 
               thereof, you agree to be bound by the terms and conditions below, in addition to terms 
@@ -147,10 +154,7 @@ const TermsAndConditionsModal = ({ onClose }) => {
         </div>
         <hr className="solidLine"/>
 
-
-          
         
-        <button onClick={onClose}>Close</button>
       </div>
     </div>
   );

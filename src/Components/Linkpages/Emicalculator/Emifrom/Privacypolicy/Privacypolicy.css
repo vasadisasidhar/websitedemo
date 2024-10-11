@@ -1,5 +1,5 @@
 /* TermsAndConditionsModal.css */
-.modalOverlay {
+.modalOverlay1 {
     position: fixed;
     top: 0;
     left: 0;
@@ -12,7 +12,7 @@
     z-index: 1000;
   }
   
-.modalContent {
+.modalContent1 {
     background: white;
     color: black;
     padding: 20px;
@@ -32,47 +32,49 @@
   }
 
 
-/*------------------------------------------------------------------------------------------*/
-.headeres{
-  display: flex;
-  height: 100px;
-  position: sticky; /* Make it sticky */
-  top: 0; /* Stick to the top */
-  z-index: 1;
- }
+  /*------------------------------------------------------------------------------------------*/
+   .header01{
+    display: flex;
+    height: 100px;
+    position: sticky; /* Make it sticky */
+    top: 0; /* Stick to the top */
+    z-index: 1;
+   }
 
- .containerBoxes1{
-  width: 1000px;
-  background-color:#373984;
-  padding-top: 25px;
+   .containerbox1{
+    width: 1000px;
+    background-color:#373984;
+    padding-top: 25px;
 }
 
-.containerBoxes1 h5{
-  font-size: 45px;
-  color: white;
+.containerbox1 h4{
+    font-size: 45px;
+    color: white;
 }
 
-.containerBoxes2{
-  width: 40px;
-  background-color:#373984;
+.containerbox2{
+    width: 40px;
+    background-color:#373984;
 }
 
-.containerBoxes2 button{
-  font-size: 40px;  
-  color: white;
-  background-color: #373984;
-  border: none;     
+.containerbox2 button{
+    font-size: 40px;  
+    color: white;
+    background-color: #373984;
+    border: none;     
 }
+    
+    
 
-
-
+   
   /*------------------------------------------------------------------------------------------*/
 
-
-
-
   
-.modalContent button {
+ 
+  
+ 
+  
+.modalContent1 button {
     margin-top: 20px;
   }
 
@@ -81,7 +83,7 @@
     border-top: 3px solid #000; /* Change color and thickness as needed */
     margin: 20px 0; /* Adjust spacing above and below the line */
   }
-.body1 button{
+.body01 button{
     background-color: white; /* Change to your preferred color */
     color: black; /* Text color */
     border: none; /* Remove default border */
@@ -95,12 +97,12 @@
     font-size: 40px;
     margin-left: 550px;  
 }
-.body1 h3{
+.body01 h3{
       font-size:30px;
       padding-top: 30px;
       text-align: left;
     }
-.body1 p{
+.body01 p{
       text-align: justify;
       justify-content: center;
       padding-top: 20px;
@@ -109,7 +111,7 @@
     }
   
 
-.body2 button{
+.body02 button{
         background-color: white; /* Change to your preferred color */
         color: black; /* Text color */
         border: none; /* Remove default border */
@@ -123,19 +125,43 @@
         font-size: 40px;
         margin-left: 750px;  
     }
-.body2 h3{
+.body02 h3{
           font-size:30px;
           text-align: left;
           padding-left: 20px;
         }
-.body2 p{
+.body02 p{
           text-align: justify;
           justify-content: center;
           padding-left: 20px;
           padding-right: 20px;
         }
-
-.body3 button {
+.body02 button {
+        background-color: white; /* Change to your preferred color */
+        color: black; /* Text color */
+        border: none; /* Remove default border */
+        border-radius: 5px; /* Rounded corners */
+        padding: 1px 5px; /* Add some padding */
+        cursor: pointer; /* Change cursor on hover */
+        margin-left: auto; /* Push button to the right */
+        /* Optional: Add margin to adjust vertical position */
+        margin-top: 5px; /* Move button down */
+        margin-bottom: 5px; /* Move button up */
+        font-size: 40px;
+        margin-left: 300px;  
+    }
+.body02 h3 {
+          font-size:30px;
+          text-align: left;
+          padding-left: 20px;
+        }
+.body02 p {
+          text-align: justify;
+          justify-content: center;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+.body03 button {
     background-color: white; /* Change to your preferred color */
     color: black; /* Text color */
     border: none; /* Remove default border */
@@ -147,14 +173,14 @@
     margin-top: 5px; /* Move button down */
     margin-bottom: 5px; /* Move button up */
     font-size: 40px;
-    margin-left: 225px;  
+    margin-left: 390px;  
 }
-.body3 h3 {
+.body03 h3 {
     font-size:30px;
     text-align: left;
     padding-left: 20px;
     }
-.body3 p {
+.body03 p {
     text-align: justify;
     justify-content: center;
     padding-left: 20px;
@@ -162,7 +188,7 @@
     }
 
 
-.body4 button {
+.body04 button {
     background-color: white; /* Change to your preferred color */
     color: black; /* Text color */
     border: none; /* Remove default border */
@@ -174,21 +200,21 @@
     margin-top: 5px; /* Move button down */
     margin-bottom: 5px; /* Move button up */
     font-size: 40px;
-    margin-left: 700px;  
+    margin-left: 325px;  
     }
-.body4 h3 {
+.body04 h3 {
     font-size:30px;
     text-align: left;
     padding-left: 20px;
-}
-.body4 p {
+        }
+.body04 p {
     text-align: justify;
     justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.body5 button {
+.body05 button {
     background-color: white; /* Change to your preferred color */
     color: black; /* Text color */
     border: none; /* Remove default border */
@@ -200,21 +226,21 @@
     margin-top: 5px; /* Move button down */
     margin-bottom: 5px; /* Move button up */
     font-size: 40px;
-    margin-left: 380px;  
+    margin-left: 735px;  
 }
-.body5 h3 {
+.body05 h3 {
     font-size:30px;
     text-align: left;
     padding-left: 20px;
 }
-.body5 p {
+.body05 p {
     text-align: justify;
     justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.body6 button {
+.body06 button {
     background-color: white; /* Change to your preferred color */
     color: black; /* Text color */
     border: none; /* Remove default border */
@@ -226,39 +252,66 @@
     margin-top: 5px; /* Move button down */
     margin-bottom: 5px; /* Move button up */
     font-size: 40px;
-    margin-left: 800px;  
+    margin-left: 525px;  
 }
-.body6 h3 {
+.body06 h3 {
     font-size:30px;
     text-align: left;
     padding-left: 20px;
 }
-.body6 p {
+.body06 p {
     text-align: justify;
     justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
 }
 
+.body07 button {
+    background-color: white; /* Change to your preferred color */
+    color: black; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 1px 5px; /* Add some padding */
+    cursor: pointer; /* Change cursor on hover */
+    margin-left: auto; /* Push button to the right */
+                /* Optional: Add margin to adjust vertical position */
+    margin-top: 5px; /* Move button down */
+    margin-bottom: 5px; /* Move button up */
+    font-size: 40px;
+    margin-left: 610px;  
+}
+.body07 h3 {
+    font-size:30px;
+    text-align: left;
+    padding-left: 20px;
+}
+.body07 p {
+    text-align: justify;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
-
-.modalContent::-webkit-scrollbar {
+.modalContent1::-webkit-scrollbar {
     width: 10px; /* Width of the scrollbar */
   }
   
-  .modalContent::-webkit-scrollbar-track {
+  .modalContent1::-webkit-scrollbar-track {
     background: #f1f1f1; /* Color of the track */
   }
   
-  .modalContent::-webkit-scrollbar-thumb {
+  .modalContent1::-webkit-scrollbar-thumb {
     background-color: #888; /* Color of the scroll thumb */
     border-radius: 10px; /* Round edges */
   }
   
-  .modalContent::-webkit-scrollbar-thumb:hover {
+  .modalContent1::-webkit-scrollbar-thumb:hover {
     background-color: #555; /* Darker color on hover */
   }
 
+
+
+  
 
   
  

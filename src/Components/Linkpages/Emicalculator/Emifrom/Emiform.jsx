@@ -3,6 +3,7 @@ import './Emiform.css';
 import modelData from './modelData'; // Import the model data
 import ConfirmationPopup from './ConfirmationPopup';
 import TermsAndConditionsModal from './Termsandconditions/TermsAndConditionsModal';
+import Privacypolicy from './Privacypolicy/Privacypolicy';
 
 const Emiform = () => {
   const [selectedModel, setSelectedModel] = useState('');
@@ -21,6 +22,7 @@ const Emiform = () => {
   const [errors, setErrors] = useState({});
   // New state for terms modal
   const [showTermsModal, setShowTermsModal] = useState(false);
+  const [showPrivacyModal, setPrivacyModal] = useState(false);
 
   const handleModelChange = (event) => {
     setSelectedModel(event.target.value);
@@ -83,6 +85,21 @@ const Emiform = () => {
     setShowTermsModal(false);
   };
 
+
+  const handleOpenPrivacymodal = () =>{
+    setPrivacyModal(true)
+  }
+
+  const handleClosePrivacymodal = () =>{
+    setPrivacyModal(false)
+  }
+
+
+
+
+
+  
+
   // Get variants as an array
   const variants = selectedModel ? Object.keys(modelData[selectedModel].variants) : [];
   
@@ -93,6 +110,8 @@ const Emiform = () => {
     <div>
       <form>
         <div className="containerBox">
+
+        <div className="inputBox select-container">
           <div className="inputBox">
             <select onChange={handleModelChange} value={selectedModel}>
               <option value=''>Select Model*</option>
@@ -100,9 +119,11 @@ const Emiform = () => {
                 <option key={model} value={model}>{model}</option>
               ))}
             </select>
-            {errors.model && <span className="error">{errors.model}</span>}
+            {errors.model && <span className="error" > {errors.model} </span>}
+          </div>
           </div>
 
+          <div className="inputBox select-container">
           <div className="inputBox">
             <select onChange={handleVariantChange} value={selectedVariant}>
               <option value=''>Select Variant*</option>
@@ -112,7 +133,9 @@ const Emiform = () => {
             </select>
             {errors.variant && <span className="error">{errors.variant}</span>}
           </div>
+          </div>
 
+          <div className="inputBox select-container">
           <div className="inputBox">
             <select value={selectedColor} onChange={(e) => setSelectedColor(e.target.value)}>
               <option value=''>Select Color*</option>
@@ -121,6 +144,7 @@ const Emiform = () => {
               ))}
             </select>
             {errors.color && <span className="error">{errors.color}</span>}
+          </div>
           </div>
         </div>
 
@@ -164,9 +188,11 @@ const Emiform = () => {
                 <strong className="terms-strong"> I Accept the Terms of use.   </strong></span>
                  I am explicitly soliciting a call message via whatsapp and other medium & am 
                 allowing this information to be used by Maruti Suzuki & its partners to customize 
-                car loan offering to my profile in accordance with the MSIL privacy policy. 
-                The loan process would be subject to these terms.</p>
-            {errors.agreed && <span className="error">{errors.agreed}</span>}
+                car loan offering to my profile in accordance with the 
+                <span onClick={handleOpenPrivacymodal} style={{ cursor: 'pointer', color: 'blue' }}>
+                <strong className="terms-strong">  MSIL privacy policy</strong></span>
+                .The loan process would be subject to these terms.</p>
+            {errors.agreed && <span className="error1">{errors.agreed}</span>}
           </div>
         </div>
 
@@ -176,6 +202,7 @@ const Emiform = () => {
       </form>
       {showModal && <ConfirmationPopup message={modalMessage} onClose={handleCloseModal} />}
       {showTermsModal && <TermsAndConditionsModal onClose={handleCloseTermsModal} />}
+      {showPrivacyModal && <Privacypolicy onClose={handleClosePrivacymodal} />}
     </div>
   );
 };

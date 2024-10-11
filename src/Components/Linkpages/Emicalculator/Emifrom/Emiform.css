@@ -84,7 +84,86 @@ select option {
     height: 70px;
     }
 
-    .terms-strong{
-        color: white;
-        border-bottom: 2px solid white;
+.terms-strong{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.error{
+    color: red;
+    font-size: 20px;
+}
+.error1{
+    color: red;
+    font-size: 20px;
+    padding-left: 85px;
+}
+
+
+  /*----------------------------------DROP DOWN ICON-----------------------------------*/
+.select-container {
+    position: relative;
+    display: inline-block;
     }
+      
+.select-container select {
+    -webkit-appearance: none; /* Remove default arrow in Safari */
+    -moz-appearance: none;    /* Remove default arrow in Firefox */
+    appearance: none;         /* Remove default arrow in modern browsers */
+    background: transparent;
+    padding: 10px; /* Adjust padding for better appearance */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 4px; /* Rounded corners */
+}
+      
+.select-container::after {
+    content: "▼"; /* Custom arrow */
+    color: white; /* Change arrow color to white */
+    font-size: 12px; /* Adjust size */
+    position: absolute;
+    right: 10px; /* Adjust position */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    pointer-events: none; /* Prevent click events on the arrow */
+}
+
+.inputBox {
+    position: relative;
+  }
+  
+  /*----------------------------------DATE ICON-----------------------------------*/
+  .inputBox input[type='date'] {
+    background: transparent; /* Make background transparent */
+   
+    padding-right: 20px; /* Add padding to the right to avoid text overlap */
+    outline: none; /* Remove outline */
+}
+
+/* Hide the default calendar icon */
+.inputBox input[type='date']::-webkit-calendar-picker-indicator {
+    opacity: 0; /* Make it invisible */
+}
+
+/* You may also want to customize the placeholder text */
+.inputBox input[type='date']::placeholder {
+    color: #ccc; /* Light color for placeholder */
+}
+
+  /* Apply the icon only to the date input field */
+  .inputBox input[type='date']::after {
+    content: '📅'; /* Replace with a white calendar icon */
+    color: white; /* Change icon color to white */
+    position: absolute;
+    margin-top: 13px;
+    right: 10px; /* Position the icon */
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Make sure the icon doesn't block input */
+  }
+
+/*==============================================================================*/
+
+
+  
+  
+      
