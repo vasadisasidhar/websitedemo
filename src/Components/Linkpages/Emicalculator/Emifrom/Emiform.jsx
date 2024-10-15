@@ -76,7 +76,6 @@ const Emiform = () => {
     setShowModal(false);
   };
 
-
   const handleOpenTermsModal = () => {
     setShowTermsModal(true);
   };
@@ -93,13 +92,6 @@ const Emiform = () => {
   const handleClosePrivacymodal = () =>{
     setPrivacyModal(false)
   }
-
-
-
-
-
-  
-
   // Get variants as an array
   const variants = selectedModel ? Object.keys(modelData[selectedModel].variants) : [];
   

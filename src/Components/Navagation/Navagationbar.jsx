@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "./Navagation.css";
 import { Link } from 'react-router-dom';
 import logo from '../Images/logo.jpg';
+import Signin from './Loginpage/Signin';
 
 const Navagationbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -38,9 +39,17 @@ const Navagationbar = () => {
       </div>
 
       <div className="right">
-        <div className="signin" onClick={handleAuthToggle}>
-          {isLoggedIn ? "Logout" : "Signin / Signup"}
+
+        <div className="signin">
+          
+          <button><Signin/></button>
+          
         </div>
+
+       {/*<div className="signin" onClick={handleAuthToggle}>
+          {isLoggedIn ? "Logout" : "Signin / Signup"}
+        </div>*/}
+
         <div className="cart">(Add +91/0 before calling) <h1>9492724945</h1></div>
       </div>
     </div>

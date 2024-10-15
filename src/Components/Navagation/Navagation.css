@@ -85,6 +85,14 @@
     font-size: 25px;
   }
 
+  .signin button{
+    font-size: 20px;
+    background-color: #373984;
+    color: white;
+    border: none;
+
+  }
+
   
 
 
