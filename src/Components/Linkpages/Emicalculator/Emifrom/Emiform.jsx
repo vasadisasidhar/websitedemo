@@ -74,6 +74,15 @@ const Emiform = () => {
 
   const handleCloseModal = () => {
     setShowModal(false);
+    setSelectedModel('')
+    setSelectedVariant('')
+    setSelectedColor('')
+    setName('');
+    setEmail('');
+    setDob('');
+    setMobile('');
+    setIsAgreed(false);
+    setErrors({});
   };
 
   const handleOpenTermsModal = () => {

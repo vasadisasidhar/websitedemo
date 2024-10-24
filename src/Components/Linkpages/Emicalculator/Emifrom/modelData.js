@@ -15,17 +15,17 @@ const modelData = {
 
     'NEW WAGONR': {
       variants: {
-        VXI: ['White', 'Black', 'Silver'],
+        'VXI': ['White', 'Black', 'Silver'],
         'VXI+': ['Blue', 'Gray'],
-        ZXI: ['White', 'Black']
+        'ZXI': ['White', 'Black']
       }
     },
 
     'ALTO K10': {
       variants: {
-        STD: ['Red', 'Green'],
-        LXI: ['Yellow', 'Blue'],
-        VXI: ['Red', 'Black', 'White']
+        'STD': ['Red', 'Green'],
+        'LXI': ['Yellow', 'Blue'],
+        'VXI': ['Red', 'Black', 'White']
       }
     },
 
